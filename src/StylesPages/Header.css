@@ -1,15 +1,13 @@
 /* Estilos para la vista de escritorio (PC) */
 .header {
-    display: flex;
+     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #fc2003;
     color: #fff;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    padding-bottom: 10px;    
     top: 15%;
-    width: 100%;
+    width:100%;
   }
   
   .menu li.active a {
