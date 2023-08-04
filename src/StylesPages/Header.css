@@ -1,34 +1,138 @@
 /* Estilos para la vista de escritorio (PC) */
 .header {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fc2003;
+  color: #fff;
+  padding-bottom: 10px;
+  top: 15%;
+  width: 100%;
+}
+
+.menu li.active a {
+  background-color: #fff;
+  color: #fd0003;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.mobile-menu-button {
+  display: none;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+  background-color: transparent;
+  color: #fd0003;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.cart-login {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-login img {
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+.cart-login a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Estilos para la vista de dispositivos móviles (celulares) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    display: flex;
     background-color: #fc2003;
     color: #fff;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
     top: 15%;
-    width:100%;
+    width: 100%;
   }
-  
-  .menu li.active a {
+
+  /* ... Tus estilos actuales ... */
+
+  .mobile-menu-button {
+    display: flex;
+    cursor: pointer;
     background-color: #fff;
     color: #fd0003;
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s ease; /* Agrega la transición para animar el desplazamiento */
   }
-  
+
+  .mobile-menu-button:hover {
+    background-color: #fff;
+    color: #fd0003;
+    text-align: center;
+  }
+
+  /* Estilos para mostrar el menú en dispositivos móviles */
+  .show-mobile-menu {
+    display: block;
+    transform: translateY(
+      0
+    ); /* Asegúrate de que el menú aparezca en la posición correcta */
+  }
+
+  /* Estilos para ocultar el menú en dispositivos móviles */
+  .show-mobile-menu {
+    display: none;
+    transform: translateY(
+      -100%
+    ); /* Desplaza el menú hacia arriba para ocultarlo */
+  }
+
   .logo img {
-    width: 150px;
-    height: auto;
+    width: 100px;
   }
-  
+
   .menu ul {
-    list-style: none;
-    display: flex;
+    flex-direction: column;
   }
-  
+
   .menu li {
+    margin: 5px 0;
     margin-right: 20px;
     background-color: transparent;
     color: #fd0003;
@@ -36,80 +140,13 @@
     font-weight: bold;
     border-radius: 10px;
   }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
+
   .cart-login {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .cart-login img {
-    width: 50px;
-    border-radius: 50%;
+    flex-direction: column;
     align-items: center;
   }
-  
+
   .cart-login a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 20px;
+    padding: 10px;
   }
-  
-  /* Estilos para la vista de dispositivos móviles (celulares) */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      background-color: #fc2003;
-      color: #fff;
-      padding-bottom: 10px;    
-      top: 15%;
-      width:100%;
-    }
-  
-    .menu {
-      margin-top: 10px;
-    }
-  
-    .logo img {
-      width: 100px;
-    }
-  
-    .menu ul {
-      flex-direction: column;
-    }
-  
-    .menu li {
-      margin: 5px 0;
-      margin-right: 20px;
-      background-color: transparent;
-      color: #fd0003;
-      padding: 10px;
-      font-weight: bold;
-      border-radius: 10px;
-    }
-  
-    .cart-login {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .cart-login a {
-      padding: 10px;
-    }
-  }
-  
+}
