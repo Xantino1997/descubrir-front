@@ -1,0 +1,133 @@
+.conteiner-nosotros{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .titulo-about{
+    text-align: center;
+    padding-bottom:30px;
+  }
+  
+  /* Estilos para el componente About */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Estilos para la imagen y el contenedor de superposición */
+  .image-container {
+    position: relative;
+    width: 500px; /* Ajusta el tamaño máximo de la imagen */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin:10px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo para el contenedor de superposición */
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    height: 40%;
+  }
+  
+  /* Estilos para el texto en el contenedor de superposición */
+  .overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .overlay a {
+    display: inline-block;
+    background-color: #fc2003;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlay a:hover {
+    background-color: #d60b00;
+  }
+  
+  /* Estilos específicos para las animaciones de React Reveal */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  
+  .slide-enter {
+    transform: translateX(-100%);
+  }
+  
+  .slide-enter-active {
+    transform: translateX(0);
+    transition: transform 1s ease;
+  }
+  
+  .slide-exit {
+    transform: translateX(0);
+  }
+  
+  .slide-exit-active {
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+  }
+  
+  .fade-right-enter {
+    opacity: 0;
+  }
+  
+  .fade-right-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  
+  .fade-right-exit {
+    opacity: 1;
+  }
+  
+  .fade-right-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .fade-left-enter {
+    opacity: 0;
+  }
+  
+  .fade-left-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease;
+  }
+  
+  .fade-left-exit {
+    opacity: 1;
+  }
+  
+  .fade-left-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  

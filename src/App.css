@@ -1,0 +1,17 @@
+:root {
+  /* Colores principales */
+  --color-principal: #fc2003; /* Rojo */
+  --color-lightblue: lightblue;
+  --color-black: black;
+  --color-violet: violet;
+  --color-green: green;
+  --color-blue: blue;
+
+  /* Colores adicionales */
+  --color-negro-transparente: rgba(0, 0, 0, 0.5); /* Negro con transparencia del 50% */
+  --color-transparente: transparent; /* Transparente */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
