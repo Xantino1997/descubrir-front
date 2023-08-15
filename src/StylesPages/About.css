@@ -19,7 +19,7 @@
   /* Estilos para la imagen y el contenedor de superposición */
   .image-container {
     position: relative;
-    width: 500px; /* Ajusta el tamaño máximo de la imagen */
+    width: 400px; /* Ajusta el tamaño máximo de la imagen */
   }
   
   .image-container img {
@@ -38,7 +38,7 @@
     color: #fff;
     padding: 10px;
     width: 100%;
-    height: 40%;
+    height: 50%;
   }
   
   /* Estilos para el texto en el contenedor de superposición */
