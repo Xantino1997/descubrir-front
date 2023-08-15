@@ -44,7 +44,7 @@ const IndexPage = () => {
 
   return (
     <div className="home-container">
-      {showModal && (
+      {/* {showModal && (
         // Modal para suscribirse al newsletter
         <div className="modal-overlay">
           <div className="modal">
@@ -66,11 +66,11 @@ const IndexPage = () => {
             <button onClick={handleNoButtonClick}>No por el momento</button>
           </div>
         </div>
-      )}
+      )} */}
       <div className="background"></div>
 
-      <div className="brand">
-      </div>
+      {/* <div className="brand">
+      </div> */}
       <h1 className="title-home">{titleHome[currentWord]}</h1>
       <video autoPlay loop muted className="video-bg">
         <source src={DigitalVideo} type="video/mp4" />
