@@ -96,13 +96,13 @@ const Header = () => {
             alt="Imagen de perfil"
           />
         )}
-        {isLoggedIn ? (
+        {/* {isLoggedIn ? (
           <a href="#" onClick={handleLogin}>
             Salir
           </a>
         ) : (
           <Link to="/sign-in">Iniciar Sesión</Link>
-        )}
+        )} */}
       </div>
       <div className="mobile-menu-button" onClick={toggleMobileMenu}>
         {showMobileMenu ? "Menu" : "Cerrar"}
