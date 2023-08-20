@@ -6,7 +6,6 @@ import Facebook from "./assets/facebook.png";
 import Instagram from "./assets/instagram.png";
 import WhatsApp from "./assets/whatsapp.png";
 
-
 const Footer = () => {
   const [email, setEmail] = useState("");
   const currentYear = new Date().getFullYear();
