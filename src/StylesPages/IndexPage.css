@@ -5,6 +5,7 @@
   height: 100vh;
   overflow: hidden;
 }
+
 .diseños-container {
   z-index: 60;
   position: absolute;
