@@ -91,7 +91,7 @@ const titleHome = [/* "Tecnologia...", "Innovación...", "Creatividad..."*/];
           <img src={Descubrir} className="img-desarrollo" alt="" />
         </div>
         <div className="diseños-rutas3">
-          <h1 className="diseños-h1">Informacion</h1>
+          <h1 className="diseños-h1">Información</h1>
           <img src={Descubrir3} className="img-desarrollo" alt="" />
         </div>
       </div>
