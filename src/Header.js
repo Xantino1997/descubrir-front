@@ -1,43 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./StylesPages/Header.css";
 import DigitalLogo from "./assets/DIGITAL.png";
 import ProfileImg from "./assets/profile.png"; // Importa aquí la imagen de perfil del usuario
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado para controlar el inicio de sesión
-  const [showProfileImg, setShowProfileImg] = useState(false); // Estado para controlar la imagen de perfil
-  const [activeLink, setActiveLink] = useState("inicio"); // Estado para el enlace activo
-  const [showMobileMenu, setShowMobileMenu] = useState(false); // Estado para controlar el menú hamburguesa en dispositivos móviles
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [showProfileImg, setShowProfileImg] = useState(false);
+  const [activeLink, setActiveLink] = useState("inicio");
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [logoClickCount, setLogoClickCount] = useState(0);
 
-  // Función para manejar el inicio de sesión y mostrar la imagen de perfil
-  const handleLogin = () => {
-    if (!isLoggedIn) {
-      // Si no ha iniciado sesión, inicia sesión y muestra la imagen de perfil
-      setIsLoggedIn(true);
-      setShowProfileImg(true);
-    } else {
-      // Si ha iniciado sesión, cierra la sesión y oculta la imagen de perfil
-      setIsLoggedIn(false);
-      setShowProfileImg(false);
+  useEffect(() => {
+    if (logoClickCount >= 10) {
+      const timeout = setTimeout(() => {
+        setLogoClickCount(0);
+      }, 300000); // 5 minutos en milisegundos
+      return () => clearTimeout(timeout);
     }
+  }, [logoClickCount]);
+
+  const handleLogin = () => {
+    setIsLoggedIn(!isLoggedIn);
+    setShowProfileImg(!showProfileImg);
   };
 
-  // Función para cambiar el enlace activo
   const handleSetActiveLink = (link) => {
     setActiveLink(link);
   };
 
-  // Función para mostrar u ocultar el menú hamburguesa
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
   };
 
+  const handleLogoClick = () => {
+    setLogoClickCount(logoClickCount + 1);
+  };
+
   return (
     <header className="header">
-      <div className="logo">
+      <div className="logo" onClick={handleLogoClick}>
         <img src={DigitalLogo} alt="Logo de la empresa" />
       </div>
+      {logoClickCount >= 10 && (
+        <div className="login-popup">
+          <Link to="/sign-in">Iniciar Sesión</Link>
+        </div>
+      )}
       <nav className={`menu ${showMobileMenu ? "show-mobile-menu" : ""}`}>
         <ul>
           <li
@@ -96,19 +105,18 @@ const Header = () => {
             alt="Imagen de perfil"
           />
         )}
-        {/* {isLoggedIn ? (
+        {isLoggedIn ? (
           <a href="#" onClick={handleLogin}>
             Salir
           </a>
         ) : (
-          <Link to="/sign-in">Iniciar Sesión</Link>
-        )} */}
+          <Link to="/sign-in"></Link>
+        )}
       </div>
       <div className="mobile-menu-button" onClick={toggleMobileMenu}>
         {showMobileMenu ? "Menu" : "Cerrar"}
       </div>
     </header>
-    
   );
 };
 
