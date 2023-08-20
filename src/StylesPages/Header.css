@@ -1,14 +1,23 @@
 /* Estilos para la vista de escritorio (PC) */
+
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #fc2003;
+  background-image: url('../assets/header.png'); /* Ruta a tu archivo GIF */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-size: cover; /* Cubre el fondo del elemento */
+  background-position: center center; /* Centra el fondo horizontal y verticalmente */
   color: #fff;
   padding-bottom: 10px;
   top: 15%;
   width: 100%;
+  height:100%;
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido no se superponga con las olas */
 }
+
 
 .menu li.active a {
   background-color: #fff;
@@ -25,6 +34,7 @@
 .logo img {
   width: 150px;
   height: auto;
+  cursor: pointer; /* Agrega el cursor de puntero al logo */
 }
 
 .menu ul {
@@ -85,8 +95,6 @@
     width: 100%;
   }
 
-  /* ... Tus estilos actuales ... */
-
   .mobile-menu-button {
     display: flex;
     cursor: pointer;
@@ -98,7 +106,7 @@
     margin-top: 10px;
     text-align: center;
     width: 100px;
-    transition: transform 0.3s ease; /* Agrega la transición para animar el desplazamiento */
+    transition: transform 0.3s ease;
   }
 
   .mobile-menu-button:hover {
@@ -107,20 +115,14 @@
     text-align: center;
   }
 
-  /* Estilos para mostrar el menú en dispositivos móviles */
   .show-mobile-menu {
     display: block;
-    transform: translateY(
-      0
-    ); /* Asegúrate de que el menú aparezca en la posición correcta */
+    transform: translateY(0);
   }
 
-  /* Estilos para ocultar el menú en dispositivos móviles */
-  .show-mobile-menu {
+  .hide-mobile-menu {
     display: none;
-    transform: translateY(
-      -100%
-    ); /* Desplaza el menú hacia arriba para ocultarlo */
+    transform: translateY(-100%);
   }
 
   .logo img {
