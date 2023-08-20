@@ -8,7 +8,6 @@
   justify-content: space-around;
   background-image: url('../assets/footer.png'); /* Ruta a tu archivo SVG */
 }
-
 .columna {
   flex: 1;
   margin-right: 20px;
