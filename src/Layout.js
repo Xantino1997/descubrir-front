@@ -1,24 +1,24 @@
+import React from "react";
 import Header from "./Header";
-import Footer from "./Footer";
-
-// import Diamante from "./pages/Diamante";
 import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
+import Chatbot from "./ChatBot"; // Asegúrate de importar correctamente el componente Chatbot
 
-export default function Layout() {
+function Layout() {
   return (
     <main style={{ padding: '10px', paddingTop: '0px' }}>
       <Header />
-      <>
-        <br /> {/* Etiqueta <br> para salto de línea */}
-        <br /> {/* Etiqueta <br> para salto de línea */}
-        <br /> {/* Etiqueta <br> para salto de línea */}
-        <br /> {/* Etiqueta <hr> para una línea horizontal */}</>
-      {/* <NoticeAlert /> */}
-      <Outlet />
       <br />
-      {/* <Form /> */}
+      <br />
+      <br />
+      <Outlet />
+      <Chatbot /> {/* Agrega el componente Chatbot aquí */}
+      <br />
+      <br />
+      <br />
       <Footer />
-      
     </main>
   );
 }
+
+export default Layout;
