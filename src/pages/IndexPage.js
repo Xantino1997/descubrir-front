@@ -6,6 +6,7 @@ import Descubrir2 from "../assets/contacto.avif";
 import Descubrir3 from "../assets/Descubrir.png";
 import Swal from "sweetalert2"; // Importa SweetAlert
 
+
 const IndexPage = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const [showModal, setShowModal] = useState(true); // Estado para mostrar/ocultar el modal
