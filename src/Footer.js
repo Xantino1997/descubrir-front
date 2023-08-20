@@ -13,7 +13,6 @@ const Footer = () => {
 
   const handleWhatsAppClick = () => {
     const message = "Hola, quiero saber más de este producto.";
-
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
