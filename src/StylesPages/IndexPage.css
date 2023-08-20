@@ -51,8 +51,6 @@
 
 }
 .diseños-rutas3 {
-  
-
   text-align: center;
   height: 50%;
   top: 50%;
@@ -229,5 +227,51 @@
     background-repeat: no-repeat;
     border: none; /* Eliminamos el borde en dispositivos móviles */
     padding: 0; /* Eliminamos el padding en dispositivos móviles */
+  }
+
+  .diseños-container {
+    z-index: 90;
+    position: absolute;
+    width: 100%;
+    top:10rem;
+    height: 50%;
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección del flujo a vertical */
+    align-items: center; /* Centramos horizontalmente */
+    background: transparent;
+  }
+
+  .img-desarrollo {
+    width: 50%; /* Ancho del 100% para ocupar todo el ancho disponible */
+    height: 30%; /* Altura automática para mantener la proporción */
+    background-size: cover;
+    backdrop-filter: blur(5px); /* Agrega un ligero desenfoque al fondo */
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .diseños-rutas1,
+  .diseños-rutas2,
+  .diseños-rutas3 {
+    text-align: center;
+    height: 50%;
+    width:50%;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .diseños-rutas1 {
+    margin-top: 10px; /* Ajustamos el margen superior */
+  }
+
+  .diseños-rutas2 {
+    margin-top: 10px; /* Ajustamos el margen superior */
+  }
+
+  .diseños-rutas3 {
+    margin-top: 10px; /* Ajustamos el margen superior */
   }
 }
