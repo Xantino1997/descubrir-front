@@ -13,6 +13,7 @@ const Footer = () => {
 
   const handleWhatsAppClick = () => {
     const message = "Hola, quiero saber más de este producto.";
+
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
@@ -53,7 +54,6 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img className="redes-sociales" src={Facebook} alt="Facebook" />
-                Facebook
               </a>
             </li>
             <li>
@@ -63,7 +63,6 @@ const Footer = () => {
                   src={Instagram}
                   alt="Instagram"
                 />
-                Instagram
               </Link>
             </li>
             <li>
@@ -73,7 +72,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <img className="redes-sociales" src={WhatsApp} alt="WhatsApp" />
-                WhatsApp
+               
               </a>
             </li>
           </ul>
