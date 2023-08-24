@@ -32,11 +32,78 @@ function Chatbot() {
       setIsLoading(true);
 
       try {
-        const response = await axios.post(
-          "https://descubrir-back.vercel.app/generate-completion",
-          { prompt: inputText }
-        );
-        const botResponse = response.data.completion;
+        let botResponse = "";
+
+        if (messages.length === 0) {
+          botResponse = (
+            <div className="div-respuesta-bot">
+              Hola, ¿cómo estás? Soy Gabot. ¡Encantado de ayudarte! Aquí tienes
+              algunos enlaces útiles:
+              <ul>
+                <li>
+                  <a href="https://www.google.com">Google</a>
+                </li>
+                <li>
+                  <a href="/proyecto-2">Proyecto 2</a>
+                </li>
+                <li>
+                  <a href="/proyecto-3">Proyecto 3</a>
+                </li>
+              </ul>
+            </div>
+          );
+        } else {
+          if (inputText.toLowerCase().includes("trabajos")) {
+            botResponse = (
+              <div className="div-respuesta-bot">
+                ¡Encantado de ayudarte! Aquí tienes algunos enlaces a nuestros
+                trabajos:
+                <ul>
+                  <li>
+                    <a href="https://www.google.com">Google</a>
+                  </li>
+                  <li>
+                    <a href="/proyecto-2">Proyecto 2</a>
+                  </li>
+                  <li>
+                    <a href="/proyecto-3">Proyecto 3</a>
+                  </li>
+                </ul>
+              </div>
+            );
+          } else if (inputText.toLowerCase().includes("redes")) {
+            botResponse = (
+              <div className="div-respuesta-bot">
+                Siguenos en redes:
+                <ul className="div-respuesta-bot-link">
+                  <li>
+                    <a href="https://m.facebook.com/profile.php?eav=AfZzX5RDgft6AitdBeN-Qngh7HA8RKTVRXrzVtZ0yRHNo6ufdL7DPwG_fCv6bVqkVI0&paipv=0">
+                      Descubrir Digital en Facebook
+                    </a>
+                  </li>
+                  {/* <li>
+                    <a href="https://www.twitter.com/tuempresa">
+                      Descubrir Digital en Twitter
+                    </a>
+                  </li> */}
+                  <li>
+                    <a href="https://www.instagram.com/tuempresa">
+                      Descubrir Digital en Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/channel/UCZiluF9OcAgofPiSLHi0I_w">
+                      Canal de YouTube Descubrir Digital
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            );
+          } else {
+            botResponse =
+              "No entiendo tu mensaje. Responde: trabajos o redes, gracias";
+          }
+        }
 
         const newBotMessage = { text: botResponse, isUser: false };
         setMessages([...messages, newBotMessage]);
@@ -53,16 +120,6 @@ function Chatbot() {
       handleSendMessage();
     }
   };
-
-  const renderWavingText = (text) => {
-    return [...text].map((letter, index) => (
-      <span key={index} className="letter-wave">
-        {letter}
-      </span>
-    ));
-  };
-
-
 
   return (
     <div className={`chatbot ${showChat ? "active" : ""}`}>
@@ -104,7 +161,7 @@ function Chatbot() {
               fontWeight: "bold",
             }}
           >
-            {isLoading ? "Contestando..." : ("Enviar")}
+            {isLoading ? "Contestando..." : "Enviar"}
           </button>
         </div>
       </div>
