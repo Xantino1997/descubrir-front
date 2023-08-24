@@ -59,15 +59,15 @@ function Chatbot() {
                 ¡Encantado de ayudarte! Aquí tienes algunos enlaces a nuestros
                 trabajos:
                 <ul>
-                  <li>
-                    <a href="https://www.google.com">Google</a>
-                  </li>
-                  <li>
-                    <a href="/proyecto-2">Proyecto 2</a>
-                  </li>
-                  <li>
-                    <a href="/proyecto-3">Proyecto 3</a>
-                  </li>
+                 <li>
+                  <a href="https://comunidad-mocovi.vercel.app">Comunidad Mocovi</a>
+                </li>
+                  // <li>
+                  //   <a href="/proyecto-2">Proyecto 2</a>
+                  // </li>
+                  // <li>
+                  //   <a href="/proyecto-3">Proyecto 3</a>
+                  // </li>
                 </ul>
               </div>
             );
