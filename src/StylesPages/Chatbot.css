@@ -7,13 +7,39 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 1000;
+}
+
+.div-respuesta-bot{
+  background:#eee;
+}
+.div-respuesta-bot ul{
+  margin-top:10px;
+  color:#333 !important;
+  font-weight:bold;
+}
+.div-respuesta-bot li{
+  color:#fff !important;
+  text-align:center;
+  background:#007bff;
+  padding:5px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border-radius:15px;
+  font-weight:bold;
+}
+.div-respuesta-bot a{
+  color:#fff !important;
+  padding:5px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border-radius:15px;
+  font-weight:bold;
 }
 
 .chatbot.active {
@@ -189,4 +215,8 @@
   animation: wave 1.5s infinite;
 }
 
+
+@media (max-width: 768px){
+  
+}
 
