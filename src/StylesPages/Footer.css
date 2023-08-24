@@ -6,8 +6,9 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  background-image: url('../assets/footer.png'); /* Ruta a tu archivo SVG */
+  background-image: url("../assets/footer.png"); /* Ruta a tu archivo SVG */
 }
+
 .columna {
   flex: 1;
   margin-right: 20px;
@@ -80,11 +81,11 @@ a:hover {
 }
 
 .redes-sociales {
-  width: 30px;
+  width: 50px;
   border-radius: 25px;
   margin-right: 5px;
-
-
+  border: 2px solid red !important;
+  box-shadow: 0 0 10px red;
 }
 
 .copyright {
@@ -104,15 +105,16 @@ a:hover {
     align-items: center;
     padding: 20px;
   }
-  a {
+  .redes-sociales {
+    width: 30px;
     text-decoration: none;
-    color:red ;
-    font-weight: bold ;
+    border-radius: 50%;
+    border: 2px solid red !important;
+    box-shadow: 0 0 10px red;
   }
   .columna {
     margin-right: 0;
     margin-bottom: 20px;
-
   }
 
   .form-footer {
