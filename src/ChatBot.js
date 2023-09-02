@@ -41,7 +41,7 @@ function Chatbot() {
               algunos enlaces útiles:
               <ul>
                 <li>
-                  <a href="https://comunidad-mocovi.vercel.app">Comunidad Mocovi</a>
+                  <a href="https://centromocovi.vercel.app">Centro Mocovi</a>
                 </li>
             
               </ul>
