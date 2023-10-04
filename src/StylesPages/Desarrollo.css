@@ -40,9 +40,8 @@
   }
   
   .beneficios-list li::before {
-    content: "🔹"; /* Reemplaza el marcador con un emoji (puedes usar el emoji que desees) */
-    margin-right: 5px; /* Espacio entre el emoji y el texto del elemento */
-  }
+    content: "🔹"; 
+    margin-right: 5px; 
   
 
   li {

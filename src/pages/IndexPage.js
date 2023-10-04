@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import "../StylesPages/IndexPage.css";
 import DigitalVideo from "../assets/videopc.mp4";

@@ -1,3 +1,4 @@
+
 import "../StylesPages/Terminos.css";
 import React from 'react';
 
