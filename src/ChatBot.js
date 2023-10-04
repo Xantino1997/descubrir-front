@@ -9,10 +9,7 @@ function Chatbot() {
   const [inputText, setInputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
-<<<<<<< HEAD
   const [visitantes, setVisitantes] = useState(0);
-=======
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
 
   const toggleChat = () => {
     setShowChat(!showChat);
@@ -24,7 +21,6 @@ function Chatbot() {
 
   useEffect(scrollToBottom, [messages]);
 
-<<<<<<< HEAD
   useEffect(() => {
     const uniqueVisitors = localStorage.getItem("uniqueVisitors");
     if (!uniqueVisitors) {
@@ -35,8 +31,7 @@ function Chatbot() {
     }
   }, []);
 
-=======
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
+
   const handleInputChange = (e) => {
     setInputText(e.target.value);
   };
@@ -58,7 +53,6 @@ function Chatbot() {
               algunos enlaces útiles:
               <ul>
                 <li>
-<<<<<<< HEAD
                   <a href="https://www.google.com">Google</a>
                 </li>
                 <li>
@@ -67,11 +61,10 @@ function Chatbot() {
                 <li>
                   <a href="/proyecto-3">Proyecto 3</a>
                 </li>
-=======
+                <li>
                   <a href="https://centromocovi.vercel.app">Centro Mocovi</a>
                 </li>
             
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
               </ul>
             </div>
           );
@@ -82,7 +75,6 @@ function Chatbot() {
                 ¡Encantado de ayudarte! Aquí tienes algunos enlaces a nuestros
                 trabajos:
                 <ul>
-<<<<<<< HEAD
                   <li>
                     <a href="https://www.google.com">Google</a>
                   </li>
@@ -92,12 +84,10 @@ function Chatbot() {
                   <li>
                     <a href="/proyecto-3">Proyecto 3</a>
                   </li>
-=======
                  <li>
                   <a href="https://centromocovi.vercel.app">Centro Mocovi</a>
                 </li>
               
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
                 </ul>
               </div>
             );
@@ -111,14 +101,6 @@ function Chatbot() {
                       Descubrir Digital en Facebook
                     </a>
                   </li>
-<<<<<<< HEAD
-=======
-                  {/* <li>
-                    <a href="https://www.twitter.com/tuempresa">
-                      Descubrir Digital en Twitter
-                    </a>
-                  </li> */}
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
                   <li>
                     <a href="https://www.instagram.com/tuempresa">
                       Descubrir Digital en Instagram
@@ -132,7 +114,6 @@ function Chatbot() {
                 </ul>
               </div>
             );
-<<<<<<< HEAD
           } else if (inputText.toLowerCase() === "gali visitantes") {
             botResponse = `Gali: Hasta ahora, ${visitantes} visitantes únicos han explorado el sitio.`;
           } else if (inputText.toLowerCase() === "clear the bot") {
@@ -141,11 +122,6 @@ function Chatbot() {
           } else {
             botResponse =
               "No entiendo tu mensaje. Responde: trabajos, redes, gracias";
-=======
-          } else {
-            botResponse =
-              "No entiendo tu mensaje. Responde: trabajos o redes, gracias";
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
           }
         }
 

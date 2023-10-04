@@ -5,15 +5,12 @@ import { UserProvider } from './UserContext';
 import IndexPage from './pages/IndexPage';
 import About from './pages/About';
 import Post from './pages/Post';
-<<<<<<< HEAD
 import Desarrollo from './pages/Desarrollo';
 import LoginForm from "./pages/LoginForm";
 import ErrorDigital from "./pages/ErrorDigital";
 import UIImportance from "./pages/UIImportance";
-=======
-import LoginForm from "./pages/LoginForm";
-import ErrorDigital from "./pages/ErrorDigital";
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
+// import LoginForm from "./pages/LoginForm";
+// import ErrorDigital from "./pages/ErrorDigital";
 import Terminos from "./pages/Terminos";
 import Diamante from "./pages/Diamante";
 import Layout from './Layout';
@@ -28,17 +25,15 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/post" element={<Post />} />
             <Route path="/sign-in" element={<LoginForm />} />
-<<<<<<< HEAD
             <Route path="/interfaz" element={<UIImportance />} />
             <Route path="/redirigiendo" element={<Diamante />} />
             <Route path="/terminos" element={<Terminos />} />
             <Route path="/error" element={<ErrorDigital />} />
             <Route path="/desarrollo" element={<Desarrollo />} />
-=======
             <Route path="/redirigiendo" element={<Diamante />} />
             <Route path="/terminos" element={<Terminos />} />
             <Route path="/error" element={<ErrorDigital />} />
->>>>>>> 1969103dce9201a01eba2b7a76c33f36a18375f8
+
             <Route path="*" element={<ErrorDigital />} /> {/* Ruta comodín para cualquier ruta no definida */}
           </Route>
         </Routes>
