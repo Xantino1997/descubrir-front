@@ -26,14 +26,14 @@ const Post = () => {
       img: leads,
     },
     {
-      user: "Nombre del Cliente Potencial",
+      user: "Gabriel",
       title: "Solicitud de Información sobre Productos",
       content:
         "Hola, estoy interesado en obtener más información sobre los productos y servicios que su empresa ofrece. Me gustaría saber más sobre sus características, precios y disponibilidad. ¿Podrían proporcionarme detalles adicionales o ponerme en contacto con un representante de ventas? Gracias.\n\nTe haz topado con un mensaje comoe este alguna vez?. Eso es muy bueno, veamos por que \n\nProspecto en Marketing Digital:\n\nEn el contexto del marketing digital, un prospecto es un cliente potencial que ha mostrado un nivel significativo de interés en los productos o servicios de una empresa. En este caso, la persona que ha enviado esta solicitud de información es un ejemplo de prospecto. Los prospectos suelen estar más avanzados en el proceso de compra y requieren una atención especializada para convertirse en clientes. Es importante seguir nutriendo a los prospectos con información relevante y brindarles respuestas a sus preguntas para impulsar la conversión.",
       img: prospecto,
     },
     {
-      user: "Nombre del Autor del Artículo",
+      user: "Gabriel",
       title: "Diferencias Entre Leads y Prospectos en el Marketing",
       content:
         "En el mundo del marketing y las ventas, es común escuchar los términos 'lead' y 'prospecto'. Ambos se refieren a personas que han mostrado interés en los productos o servicios de una empresa, pero existen diferencias clave entre ellos que es importante comprender.\n\nLeads:\n\nUn lead es alguien que ha proporcionado sus datos de contacto o ha realizado alguna acción que indica un interés inicial en lo que tu empresa ofrece. Por ejemplo, un lead podría ser alguien que ha llenado un formulario en tu sitio web, se ha suscrito a tu boletín informativo o ha descargado un recurso, como un ebook. Los leads son, en general, contactos fríos que necesitan más seguimiento y nutrición para convertirse en clientes.\n\nProspectos:\n\nUn prospecto, por otro lado, es un lead que ha avanzado en el proceso de ventas y ha demostrado un mayor nivel de interés y compromiso. Los prospectos suelen ser más calificados y están más cerca de convertirse en clientes. Han interactuado con tu empresa de manera más significativa y pueden haber expresado su intención de comprar. Los prospectos son contactos cálidos y están más cerca de la conversión.\n\nEn resumen, la principal diferencia radica en el nivel de interacción y compromiso. Los leads son contactos iniciales que requieren un esfuerzo adicional para convertirse en prospectos y, eventualmente, en clientes. Los prospectos, por otro lado, son leads más calificados que están más cerca de tomar una decisión de compra.\n\nEs importante tener estrategias de marketing y ventas específicas para nutrir tanto a los leads como a los prospectos de manera efectiva y convertirlos en clientes satisfechos.",
