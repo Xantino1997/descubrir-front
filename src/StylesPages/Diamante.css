@@ -1,0 +1,53 @@
+.diamond-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+  
+  .diamond {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+  
+  .diamond-D-D {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color:#fff !important;
+    Z-index:3;
+
+  }
+  
+  .conteiner-letter-diamond {
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform-origin: center;
+    animation: rotateDiamond 4s infinite alternate;
+  }
+  
+  @keyframes rotateDiamond {
+    0% {
+      transform: rotate(45deg);
+      box-shadow: 0 0 20px #fff;
+    }
+    100% {
+      transform: rotate(225deg);
+      box-shadow: 0 0 20px #fff, 0 0 80px #fff;
+    }
+  }
+  

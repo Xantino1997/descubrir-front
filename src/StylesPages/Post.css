@@ -1,0 +1,119 @@
+/* Estilos para la vista de escritorio (PC) */
+.post-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-user {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.profile-img {
+  width: 5%;
+  float: left;
+  margin-right: 10px;
+}
+
+.post-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.post-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.post-content {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Estilos para la vista de dispositivos móviles (celulares) */
+@media (max-width: 768px) {
+  .post-container {
+    padding: 10px;
+    border: none;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .post-user {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  .profile-img {
+    width: 20%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    float: none;
+  }
+
+  .post-content {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .post-date {
+    font-size: 10px;
+  }
+}
+
+/* Estilo para la paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Estilo para los botones de paginación */
+.pagination button {
+  background-color: #007bff; /* Color de fondo para los botones */
+  color: #fff; /* Color del texto de los botones */
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilo para el número de página activo */
+.pagination span {
+  background-color: #333; /* Color de fondo para el número de página activo */
+  color: #fff; /* Color del texto del número de página activo */
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+
+.subtitulo{
+  font-width:bold;
+}
