@@ -1,0 +1,155 @@
+/* Estilo para el encabezado */
+.clientes-div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:#fff;
+    width:100%;
+}
+
+
+
+.clientes-div h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cliente-far {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff !important;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, red 50%, white 50%);
+  }
+  
+  .cliente-sentidos{
+    width:50%;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:10px;
+    background-image: linear-gradient(to bottom right, orange 50%, red 50%);
+
+  }
+ 
+  .cliente-comunidad {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-image: radial-gradient(circle, blue, lightblue, white);
+    background-size: 150% 150%;
+    animation: gradientAnimation 5s linear infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  /* Estilo para la lista de clientes */
+  .cliente-completo ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cliente-completo li {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para el nombre del cliente */
+  .cliente-completo h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  /* Estilo para la razón del cliente */
+  .cliente-completo p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffff;
+  }
+  
+  /* Estilo para la imagen del cliente */
+  .cliente-completo img {
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para el enlace del cliente */
+  .cliente-completo a {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para la paginación */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para la lista desordenada de la paginación */
+  ul.pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+  }
+  
+  /* Estilo para los elementos de la paginación */
+  ul.pagination li {
+    margin-right: 5px;
+  }
+  
+  /* Estilo para los elementos activos de la paginación */
+  ul.pagination li.active {
+    font-weight: bold;
+  }
+  

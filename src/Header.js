@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className="header"  id="inicio">
       <div className="logo" onClick={handleLogoClick}>
         <img src={DigitalLogo} alt="Logo de la empresa" />
       </div>

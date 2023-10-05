@@ -108,12 +108,12 @@ const IndexPage = () => {
         </div>
 
         <div className="diseños-rutas3">
-          <Link to="/desarrollo" className="diseños-h1">
+          <Link to="/clientes" className="diseños-h1">
             Clientes
           </Link>
           <br />
 
-          <Link to="/desarrollo">
+          <Link to="/clientes">
             <img src={Descubrir3} className="img-desarrollo" alt="" />
           </Link>
         </div>

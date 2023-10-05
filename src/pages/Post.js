@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../StylesPages/Post.css";
 import profileAvatar from "../assets/profile.png";
 import imgDigital from "../assets/DIGITAL.png";
@@ -6,7 +6,6 @@ import leads from "../assets/leads.png";
 import prospecto from "../assets/prospecto.png";
 import diferencias from "../assets/diferencias.png";
 import bot from "../assets/icono-bot.png";
-
 
 const Post = () => {
   const posts = [
@@ -49,16 +48,25 @@ const Post = () => {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   const totalPages = Math.ceil(posts.length / postsPerPage);
+  // Función para realizar el desplazamiento suave hacia arriba de la página
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      scrollToTop(true);
     }
   };
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      scrollToTop(true);
     }
   };
 
@@ -67,6 +75,29 @@ const Post = () => {
     month: "long",
     day: "numeric",
   });
+
+
+  
+  // Efecto secundario para controlar la visibilidad del botón de desplazamiento
+  useEffect(() => {
+    const handleScroll = () => {
+      // Mostrar el botón de desplazamiento cuando el usuario ha bajado una cierta cantidad de píxeles
+      if (window.pageYOffset > 100) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Estado para controlar la visibilidad del botón de desplazamiento
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   return (
     <>
@@ -94,16 +125,22 @@ const Post = () => {
       ))}
 
       <div className="pagination">
-        <button onClick={handlePrevPage} disabled={currentPage === 1}>
+        <button onClick={() => { handlePrevPage(); scrollToTop(); }} disabled={currentPage === 1}>
           Anterior
         </button>
         <span>
           {currentPage} de {totalPages}
         </span>
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+        <button onClick={() => { handleNextPage(); scrollToTop(); }} disabled={currentPage === totalPages}>
           Siguiente
         </button>
       </div>
+
+      {showScrollButton && (
+        <button className="scroll-button" onClick={scrollToTop}>
+          Subir
+        </button>
+      )}
     </>
   );
 };

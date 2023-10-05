@@ -8,7 +8,7 @@ const UIImportance = () => {
   return (
     <>
       <div>
-        <h1 id="inicio">
+        <h1 >
           La Importancia del Diseño de Interfaz de Usuario (UI)
         </h1>
         <p>

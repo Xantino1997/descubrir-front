@@ -6,6 +6,7 @@ import IndexPage from './pages/IndexPage';
 import About from './pages/About';
 import Post from './pages/Post';
 import Desarrollo from './pages/Desarrollo';
+import ClientesElegidos from './pages/ClientesElegidos';
 import LoginForm from "./pages/LoginForm";
 import ErrorDigital from "./pages/ErrorDigital";
 import UIImportance from "./pages/UIImportance";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/post" element={<Post />} />
             <Route path="/sign-in" element={<LoginForm />} />
+            <Route path="/clientes" element={<ClientesElegidos />} />
             <Route path="/interfaz" element={<UIImportance />} />
             <Route path="/redirigiendo" element={<Diamante />} />
             <Route path="/terminos" element={<Terminos />} />
