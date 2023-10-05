@@ -35,23 +35,13 @@ html {
   background-color: #32a8a8;
   border-radius: 10px;
 }
-.ver-mas-pages-inicio{
-  width: 10%;
-  color: #fff;
-  right: 10px;
-  float: right;
-  margin-top: 10px;
-  text-align: center;
-  padding: 10px;
-  background-color: #32a8a8;
-  border-radius: 10px;
-}
 
 .landing-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .landing-page h1 {
@@ -70,6 +60,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .web-database h1 {
@@ -87,6 +78,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .e-commerce h1 {
@@ -97,4 +89,107 @@ html {
   border-radius: 5px;
   text-align: center;
   padding-left: 60px;
+  font-size:18px;
+}
+.ver-mas-pages-inicio{
+  width: 10%;
+  color: #fff;
+  right: 10px;
+  float: right;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #32a8a8;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 950px) and (min-width: 150px) {
+  .ui-importance-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ui-section {
+    background-color: #fff;
+    margin-top:60px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+  }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .landing-page h1 {
+    padding: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-color: #32a8a8;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 60px;
+    font-size:18px;
+  }
+  
+  .web-database {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .web-database h1 {
+    padding: 10px;
+    padding-right: 60px;
+    background-color: #32a8a8;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 60px;
+    font-size:18px;
+  }
+  
+  .e-commerce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .e-commerce h1 {
+    padding: 10px;
+    padding-right: 60px;
+    background-color: #32a8a8;
+    color: #fff !important;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 60px;
+    font-size:18px;
+  }
+  .ver-mas-pages-inicio{
+    width: 20%;
+    color: #fff;
+    right: 10px;
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #32a8a8;
+    border-radius: 10px;
+  }
+  
 }
