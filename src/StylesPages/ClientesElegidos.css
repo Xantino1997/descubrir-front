@@ -13,6 +13,7 @@
 .clientes-div h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #fff;
   }
 
   .cliente-far {
@@ -24,7 +25,8 @@
     margin-bottom: 15px;
     color: #fff !important;
     padding: 10px;
-    background-image: linear-gradient(to bottom right, red 50%, white 50%);
+    background: url('../assets/fondoNegro2.png') no-repeat fixed;
+    background-size: cover ;
   }
   
   .cliente-sentidos{
@@ -35,7 +37,8 @@
     margin-top:15px;
     margin-bottom:15px;
     padding:10px;
-    background-image: conic-gradient(red, yellow, orange);
+    background: url('../assets/fondoNegro3.png') no-repeat fixed;
+    background-size: cover ;
   }
  
   .cliente-comunidad {
@@ -46,9 +49,9 @@
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px;
-    background-image: radial-gradient(circle, blue, lightblue, white);
-    background-size: 150% 150%;
-    animation: gradientAnimation 5s linear infinite alternate;
+    background: url('../assets/fondoNegro.png') no-repeat fixed;
+    background-size: cover ;
+    /* animation: gradientAnimation 5s linear infinite alternate; */
   }
   
   @keyframes gradientAnimation {
