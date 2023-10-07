@@ -28,7 +28,7 @@ const ClientesElegidos = () => {
       nombre: "Comunidad Mocovi",
       razon: "Nos eligen por nuestra experiencia en el mercado.",
       imagen: comunidad,
-      enlace: "URL del enlace 3",
+      enlace: "https://centromocovi.vercel.app",
       clase: "cliente-comunidad", // Agrega una propiedad clase para cada cliente
     },
   ];
