@@ -9,6 +9,11 @@
   text-align: left;
 }
 
+.link-herramientas{
+  color: #000 !important;
+  background:#007bff !important;
+}
+
 h1 {
   font-size: 24px;
   color: #333;

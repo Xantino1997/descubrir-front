@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
 .home-container {
@@ -27,39 +26,67 @@
 }
 
 .diseños-rutas1 {
-
+  position: relative; /* Asegúrate de que el contenedor tenga position: relative; */
   text-align: center;
-  height: 50%;
-  top: 50%;
+  width: 400px;
+  height: 300px;
   padding: 10px;
   margin: 15px;
-  margin-top: 100px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.5);
-
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 20px blue;
+  background-repeat: no repeat;
+  background-image: url("../assets/contacto.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen al div */
+  background-position: center; /* Centra la imagen en el div */
 }
-.diseños-rutas2 {
 
+.diseños-rutas2 {
+  position: relative; /* Asegúrate de que el contenedor tenga position: relative; */
   text-align: center;
-  height: 50%;
-  top: 50%;
+  width: 400px;
+  height: 300px;
   padding: 10px;
   margin: 15px;
-  margin-top: 100px;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.5);
-
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 20px red;
+  background-repeat: no repeat;
+  background-image: url("../assets/Descubrir.png"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen al div */
+  background-position: center;
 }
 .diseños-rutas3 {
+  position: relative; /* Asegúrate de que el contenedor tenga position: relative; */
   text-align: center;
-  height: 50%;
-  top: 50%;
+  width: 400px;
+  height: 300px;
   padding: 10px;
   margin: 15px;
-  margin-top: 100px;
   cursor: pointer;
-  background: rgba(00, 00, 00, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 20px orange;
+  background-repeat: no repeat;
+  background-image: url("../assets/pc de fondo 1.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen al div */
+  background-position: center;
+}
 
+.diseños-h1 {
+  color: #fff !important;
+  z-index: 66;
+  font-size: 35px;
+  font-weight: bold;
+  background: #000;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 15px;
+  position: absolute;
+  bottom: 0; /* Alinea el elemento en la parte inferior */
+  left: 50%; /* Alinea el elemento en el centro horizontalmente */
+  transform: translateX(
+    -50%
+  ); /* Corrige la posición horizontal para que esté centrado */
 }
 
 .diseños-rutas1 {
@@ -85,19 +112,14 @@
   }
   66% {
     border-color: orange; /* Segundo cambio de color */
-    background: rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, 0.7);
   }
   100% {
     border-color: lightgreen; /* Volver al color inicial */
     background: rgba(255, 255, 255, 0.1);
   }
 }
-.diseños-h1 {
-  color: #fff !important;
-  z-index: 66;
-  font-size: 35px;
-  font-weight: bold;
-}
+
 .background {
   position: absolute;
   top: 0;
@@ -233,8 +255,8 @@
     z-index: 90;
     position: absolute;
     width: 100%;
-    top:10rem;
-    height: 50%;
+    top: 2rem;
+    height: 90%;
     text-align: center;
     font-family: "Amatic SC", cursive;
     display: flex;
@@ -254,25 +276,38 @@
   .diseños-rutas1,
   .diseños-rutas2,
   .diseños-rutas3 {
+    position:relative;
     text-align: center;
-    height: 50%;
-    width:50%;
+    height: 400px;
+    width: 450px;
     padding: 10px;
     margin: 15px;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.5);
+    background-repeat: no repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen al div */
+    background-position: center;
   }
 
   .diseños-rutas1 {
-    margin-top: 10px; /* Ajustamos el margen superior */
+    margin-top: 10px; 
+    background-image: url("../assets/contacto.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+    box-shadow: 0 0 20px blue;
+
   }
 
   .diseños-rutas2 {
     margin-top: 10px; /* Ajustamos el margen superior */
+    background-image: url("../assets/Descubrir.png"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+    box-shadow: 0 0 20px red;
+  
   }
 
   .diseños-rutas3 {
     margin-top: 10px; /* Ajustamos el margen superior */
     margin-bottom: 30px; /* Ajustamos el margen superior */
+    background-image: url("../assets/pc de fondo 1.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
+    box-shadow: 0 0 20px orange;
+  
   }
 }

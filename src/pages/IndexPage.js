@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import "../StylesPages/IndexPage.css";
 import DigitalVideo from "../assets/videopc.mp4";
-import Descubrir from "../assets/pc de fondo 1.avif";
-import Descubrir2 from "../assets/contacto.avif";
-import Descubrir3 from "../assets/Descubrir.png";
+// import Descubrir from "../assets/pc de fondo 1.avif";
+// import Descubrir2 from "../assets/contacto.avif";
+// import Descubrir3 from "../assets/Descubrir.png";
 import Swal from "sweetalert2"; // Importa SweetAlert
 import { Link } from "react-router-dom";
 
@@ -92,9 +92,9 @@ const IndexPage = () => {
             Desarrollo
           </Link>
           <br />
-          <Link to="/desarrollo">
+          {/* <Link to="/desarrollo">
             <img src={Descubrir2} className="img-desarrollo" alt="" />
-          </Link>
+          </Link> */}
         </div>
         <div className="diseños-rutas2">
           <Link to="/interfaz" className="diseños-h1">
@@ -102,9 +102,9 @@ const IndexPage = () => {
           </Link>
           <br />
 
-          <Link to="/interfaz">
+          {/* <Link to="/interfaz">
             <img src={Descubrir} className="img-desarrollo" alt="" />
-          </Link>
+          </Link> */}
         </div>
 
         <div className="diseños-rutas3">
@@ -113,9 +113,9 @@ const IndexPage = () => {
           </Link>
           <br />
 
-          <Link to="/clientes">
+          {/* <Link to="/clientes">
             <img src={Descubrir3} className="img-desarrollo" alt="" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
