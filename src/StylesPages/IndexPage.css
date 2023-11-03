@@ -276,7 +276,7 @@
   .diseños-rutas1,
   .diseños-rutas2,
   .diseños-rutas3 {
-    position:relative;
+    position: relative;
     text-align: center;
     height: 400px;
     width: 400px;
@@ -290,24 +290,26 @@
   }
 
   .diseños-rutas1 {
-    margin-top: 10px; 
+    background-size: cover;
+    height: 800px;
+    margin-top: 10px;
     background-image: url("../assets/contacto.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
     box-shadow: 0 0 20px blue;
-
   }
 
   .diseños-rutas2 {
+    height: 900px;
+    background-size: contain;
     margin-top: 10px; /* Ajustamos el margen superior */
     background-image: url("../assets/Descubrir.png"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
     box-shadow: 0 0 20px red;
-  
   }
 
   .diseños-rutas3 {
+    height: 800px;
     margin-top: 10px; /* Ajustamos el margen superior */
     margin-bottom: 30px; /* Ajustamos el margen superior */
     background-image: url("../assets/pc de fondo 1.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
     box-shadow: 0 0 20px orange;
-  
   }
 }
