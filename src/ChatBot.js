@@ -10,6 +10,7 @@ function Chatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
   const [visitantes, setVisitantes] = useState(0);
+  const [isBotTyping, setIsBotTyping] = useState(false);
 
   const toggleChat = () => {
     setShowChat(!showChat);
@@ -31,107 +32,117 @@ function Chatbot() {
     }
   }, []);
 
-
   const handleInputChange = (e) => {
     setInputText(e.target.value);
   };
 
-  const handleSendMessage = async () => {
+  const handleSendMessage = () => {
     if (inputText.trim() !== "") {
       const newUserMessage = { text: inputText, isUser: true };
       setMessages([...messages, newUserMessage]);
       setInputText("");
       setIsLoading(true);
+      setIsBotTyping(true);
 
-      try {
-        let botResponse = "";
-
-        if (messages.length === 0) {
-          botResponse = (
-            <div className="div-respuesta-bot">
-              Hola, ¿cómo estás? Soy Gabot. ¡Encantado de ayudarte! Aquí tienes
-              algunos enlaces útiles:
-              <ul>
-                <li>
-                  <a href="https://www.google.com">Google</a>
-                </li>
-                <li>
-                  <a href="/proyecto-2">Proyecto 2</a>
-                </li>
-                <li>
-                  <a href="/proyecto-3">Proyecto 3</a>
-                </li>
-                <li>
-                  <a href="https://centromocovi.vercel.app">Centro Mocovi</a>
-                </li>
-            
-              </ul>
-            </div>
-          );
-        } else {
-          if (inputText.toLowerCase().includes("trabajos")) {
+      setTimeout(() => {
+        try {
+          let botResponse = "";
+          if (inputText.toLowerCase().includes("gracias")) {
+            botResponse = (
+              <p>
+                Gracias a vos. Si deseas, puedes llenar este formulario para dar
+                sugerencias sobre mi atención 👉 En este{" "}
+                <a  className="div-respuesta-bot-gracias" href="https://www.google.com">link</a>.
+              </p>
+            );
+          } else if (messages.length === 0) {
             botResponse = (
               <div className="div-respuesta-bot">
-                ¡Encantado de ayudarte! Aquí tienes algunos enlaces a nuestros
-                trabajos:
+                Hola, ¿cómo estás? Soy Gabot. ¡Encantado de ayudarte! Aquí
+                tienes algunos enlaces útiles:
                 <ul>
                   <li>
-                    <a href="https://www.google.com">Google</a>
-                  </li>
-                  <li>
-                    <a href="/proyecto-2">Proyecto 2</a>
-                  </li>
-                  <li>
-                    <a href="/proyecto-3">Proyecto 3</a>
-                  </li>
-                 <li>
-                  <a href="https://centromocovi.vercel.app">Centro Mocovi</a>
-                </li>
-              
-                </ul>
-              </div>
-            );
-          } else if (inputText.toLowerCase().includes("redes")) {
-            botResponse = (
-              <div className="div-respuesta-bot">
-                Siguenos en redes:
-                <ul className="div-respuesta-bot-link">
-                  <li>
-                    <a href="https://m.facebook.com/profile.php?eav=AfZzX5RDgft6AitdBeN-Qngh7HA8RKTVRXrzVtZ0yRHNo6ufdL7DPwG_fCv6bVqkVI0&paipv=0">
-                      Descubrir Digital en Facebook
+                    <a href="https://far-servicios.vercel.app">
+                      F.A.R servicios
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/tuempresa">
-                      Descubrir Digital en Instagram
-                    </a>
+                    <a href="https://sentidos.vercel.app">Sentidos</a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/channel/UCZiluF9OcAgofPiSLHi0I_w">
-                      Canal de YouTube Descubrir Digital
-                    </a>
+                    <a href="https://centromocovi.vercel.app">Centro Mocovi</a>
                   </li>
                 </ul>
+                <h3>O escribe trabajos, redes o gracias</h3>
               </div>
             );
-          } else if (inputText.toLowerCase() === "gali visitantes") {
-            botResponse = `Gali: Hasta ahora, ${visitantes} visitantes únicos han explorado el sitio.`;
-          } else if (inputText.toLowerCase() === "clear the bot") {
-            setMessages([]);
-            return;
           } else {
-            botResponse =
-              "No entiendo tu mensaje. Responde: trabajos, redes, gracias";
+            if (inputText.toLowerCase().includes("trabajos")) {
+              botResponse = (
+                <div className="div-respuesta-bot">
+                  Si por supuesto, aqui tienes algunos enlaces a nuestros
+                  trabajos:
+                  <ul>
+                    <li>
+                      <a href="https://far-servicios.vercel.app">
+                        F.A.R servicios
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://sentidos.vercel.app">Sentidos</a>
+                    </li>
+                    <li>
+                      <a href="https://centromocovi.vercel.app">
+                        Centro Mocovi
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              );
+            } else if (inputText.toLowerCase().includes("redes")) {
+              botResponse = (
+                <div className="div-respuesta-bot">
+                  Siguenos en redes:
+                  <ul className="div-respuesta-bot-link">
+                    <li>
+                      <a href="https://m.facebook.com/profile.php?eav=AfZzX5RDgft6AitdBeN-Qngh7HA8RKTVRXrzVtZ0yRHNo6ufdL7DPwG_fCv6bVqkVI0&paipv=0">
+                        Descubrir Digital en Facebook
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/tuempresa">
+                        Descubrir Digital en Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/channel/UCZiluF9OcAgofPiSLHi0I_w">
+                        Canal de YouTube Descubrir Digital
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              );
+            } else if (inputText.toLowerCase() === "gali visitantes") {
+              botResponse = `Gali: Hasta ahora, ${visitantes} visitantes únicos han explorado el sitio.`;
+            } else if (inputText.toLowerCase() === "clear the bot") {
+              setMessages([]);
+              return;
+            } else {
+              botResponse =
+                "No entiendo tu mensaje. Responde: trabajos, redes, gracias";
+            }
           }
+
+          const newBotMessage = { text: botResponse, isUser: false };
+          setMessages([...messages, newBotMessage]);
+          setIsBotTyping(false);
+        } catch (error) {
+          console.error("Error al obtener la respuesta del bot:", error);
+          setIsBotTyping(false);
         }
 
-        const newBotMessage = { text: botResponse, isUser: false };
-        setMessages([...messages, newBotMessage]);
-      } catch (error) {
-        console.error("Error al obtener la respuesta del bot:", error);
-      }
-
-      setIsLoading(false);
+        setIsLoading(false);
+      }, 3000); // Retraso de 3 segundos antes de que el bot responda
     }
   };
 
@@ -148,7 +159,7 @@ function Chatbot() {
       </div>
       <div className="chatbot-container">
         <div className="chatbot-header">
-          <span>Chatea con Asistente</span>
+          <span>Chatea con Gabot</span>
         </div>
         <div className="chatbot-messages">
           {messages.map((message, index) => (
@@ -161,6 +172,9 @@ function Chatbot() {
               {message.text}
             </div>
           ))}
+          {isBotTyping && (
+            <div className="message bot-message">Gabot está escribiendo...</div>
+          )}
           <div ref={messagesEndRef} />
         </div>
         <div className="chatbot-input">
