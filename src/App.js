@@ -35,7 +35,6 @@ function App() {
             <Route path="/redirigiendo" element={<Diamante />} />
             <Route path="/terminos" element={<Terminos />} />
             <Route path="/error" element={<ErrorDigital />} />
-
             <Route path="*" element={<ErrorDigital />} /> {/* Ruta comodín para cualquier ruta no definida */}
           </Route>
         </Routes>

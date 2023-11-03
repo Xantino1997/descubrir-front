@@ -41,6 +41,15 @@
   border-radius:15px;
   font-weight:bold;
 }
+.div-respuesta-bot-gracias{
+  color:#000 !important;
+  border:1px solid  blue;
+  padding:5px;
+  margin-top:30px;
+  margin-bottom:30px;
+  border-radius:15px;
+  font-weight:bold;
+}
 
 .chatbot.active {
   width: 400px;
