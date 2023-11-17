@@ -282,20 +282,23 @@
   .diseños-rutas2,
   .diseños-rutas3 {
     text-align: center;
-    padding: 10px;
     margin: 15px;
     cursor: pointer;  
+
   }
 
   .diseños-rutas1 {
     background-size: cover;
+    width: 12rem;
     height: 10rem;
+    padding: 30px;
     margin-top: 10px;
     background-image: url("../assets/contacto.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
     box-shadow: 0 0 20px blue;
   }
 
   .diseños-rutas2 {
+    width: 15rem;
     height: 10rem;
     background-size: contain;
     margin-top: 10px; /* Ajustamos el margen superior */
@@ -304,6 +307,7 @@
   }
 
   .diseños-rutas3 {
+    width: 15rem;
     height: 10rem;
     margin-top: 10px; /* Ajustamos el margen superior */
     margin-bottom: 30px; /* Ajustamos el margen superior */
