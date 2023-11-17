@@ -235,6 +235,11 @@
     font-size: 36px;
     top: 35%;
   }
+  .home-container {
+    position: relative;
+    height: 50rem;
+    overflow: hidden;
+  }
 
   .brand {
     left: 0;
@@ -247,8 +252,8 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    border: none; /* Eliminamos el borde en dispositivos móviles */
-    padding: 0; /* Eliminamos el padding en dispositivos móviles */
+    border: none;
+    padding: 0;
   }
 
   .diseños-container {
@@ -256,7 +261,7 @@
     position: absolute;
     width: 100%;
     top: 2rem;
-    height: 90%;
+    height: 100%;
     text-align: center;
     font-family: "Amatic SC", cursive;
     display: flex;
@@ -276,29 +281,22 @@
   .diseños-rutas1,
   .diseños-rutas2,
   .diseños-rutas3 {
-    position: relative;
     text-align: center;
-    height: 400px;
-    width: 400px;
     padding: 10px;
     margin: 15px;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    background-repeat: no repeat;
-    background-size: cover; /* Ajusta el tamaño de la imagen al div */
-    background-position: center;
+    cursor: pointer;  
   }
 
   .diseños-rutas1 {
     background-size: cover;
-    height: 800px;
+    height: 10rem;
     margin-top: 10px;
     background-image: url("../assets/contacto.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
     box-shadow: 0 0 20px blue;
   }
 
   .diseños-rutas2 {
-    height: 900px;
+    height: 10rem;
     background-size: contain;
     margin-top: 10px; /* Ajustamos el margen superior */
     background-image: url("../assets/Descubrir.png"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
@@ -306,7 +304,7 @@
   }
 
   .diseños-rutas3 {
-    height: 800px;
+    height: 10rem;
     margin-top: 10px; /* Ajustamos el margen superior */
     margin-bottom: 30px; /* Ajustamos el margen superior */
     background-image: url("../assets/pc de fondo 1.avif"); /* Reemplaza 'url-de-tu-imagen.jpg' con la URL de tu imagen de fondo */
