@@ -8,10 +8,9 @@ import Post from './pages/Post';
 import Desarrollo from './pages/Desarrollo';
 import ClientesElegidos from './pages/ClientesElegidos';
 import LoginForm from "./pages/LoginForm";
-import ErrorDigital from "./pages/ErrorDigital";
+import ErrorDigital from "./pages/404";
 import UIImportance from "./pages/UIImportance";
 // import LoginForm from "./pages/LoginForm";
-// import ErrorDigital from "./pages/ErrorDigital";
 import Terminos from "./pages/Terminos";
 import Diamante from "./pages/Diamante";
 import Layout from './Layout';
@@ -30,7 +29,6 @@ function App() {
             <Route path="/interfaz" element={<UIImportance />} />
             <Route path="/redirigiendo" element={<Diamante />} />
             <Route path="/terminos" element={<Terminos />} />
-            <Route path="/error" element={<ErrorDigital />} />
             <Route path="/desarrollo" element={<Desarrollo />} />
             <Route path="/redirigiendo" element={<Diamante />} />
             <Route path="/terminos" element={<Terminos />} />
