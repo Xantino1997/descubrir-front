@@ -25,7 +25,7 @@ const UIImportance = () => {
               convierte en clientes potenciales. Es esencial para cualquier
               campaña de marketing exitosa.
             </p>
-            <img src={LandingPage} alt="Ejemplo de Landing Page" />
+            <img src={LandingPage} alt="Desarrollo de Landing Page" />
             <br />
 
             <a className="ver-mas-pages" href="#landing-page">
@@ -42,7 +42,7 @@ const UIImportance = () => {
               datos y contenido dinámico. Facilita la gestión y visualización de
               información relevante.
             </p>
-            <img src={PageDB} alt="Ejemplo de Web con Base de Datos" />
+            <img src={PageDB} alt="Desarrollo de Web con Base de Datos" />
             <br />
 
             <a className="ver-mas-pages" href="#web-database">
@@ -58,7 +58,7 @@ const UIImportance = () => {
               compra. Ayuda a los compradores a encontrar y adquirir productos
               fácilmente.
             </p>
-            <img src={eComerce} alt="Ejemplo de E-commerce" />
+            <img src={eComerce} alt="Desarrollo de E-commerce" />
             <br />
             <a className="ver-mas-pages" href="#e-commerce">
               Ver Más
@@ -82,7 +82,7 @@ const UIImportance = () => {
             <li>Mejora la eficacia de las campañas de marketing.</li>
           </ul>
           <br />
-          <img src={LandingPage} />
+          <img src={LandingPage} alt="Desarrollo de Landing Page" />
         </div>
 
         <div className="web-database" id="web-database">

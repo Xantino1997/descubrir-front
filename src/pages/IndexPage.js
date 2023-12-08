@@ -2,9 +2,6 @@
 import React, { useState, useEffect } from "react";
 import "../StylesPages/IndexPage.css";
 import DigitalVideo from "../assets/videopc.mp4";
-// import Descubrir from "../assets/pc de fondo 1.avif";
-// import Descubrir2 from "../assets/contacto.avif";
-// import Descubrir3 from "../assets/Descubrir.png";
 import Swal from "sweetalert2"; // Importa SweetAlert
 import { Link } from "react-router-dom";
 
@@ -12,26 +9,12 @@ const IndexPage = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const [showModal, setShowModal] = useState(true); // Estado para mostrar/ocultar el modal
   const [email, setEmail] = useState(""); // Estado para el correo del formulario
-  const titleHome = [
-    /* "Tecnologia...", "Innovación...", "Creatividad..."*/
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentWord((prevWord) => (prevWord + 1) % titleHome.length);
-    }, 5000); // Cambiar cada 5 segundos
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
+ 
 
   // Función para manejar el envío del formulario
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar la lógica para enviar el correo y suscribir al usuario al newsletter
-
-    // Muestra un SweetAlert de éxito
+   
     Swal.fire({
       title: "¡Gracias por suscribirte!",
       text: "Ahora recibirás las últimas noticias e información digital.",
@@ -39,7 +22,6 @@ const IndexPage = () => {
       confirmButtonText: "Aceptar",
     });
 
-    // Cierra el modal
     setShowModal(false);
   };
 
@@ -78,7 +60,6 @@ const IndexPage = () => {
 
       {/* <div className="brand">
       </div> */}
-      <h1 className="title-home">{titleHome[currentWord]}</h1>
 
       <video autoPlay loop muted className="video-bg">
         <source src={DigitalVideo} type="video/mp4" />
@@ -92,9 +73,6 @@ const IndexPage = () => {
             Desarrollo
           </Link>
           <br />
-          {/* <Link to="/desarrollo">
-            <img src={Descubrir2} className="img-desarrollo" alt="" />
-          </Link> */}
         </div>
         <div className="diseños-rutas2">
           <Link to="/interfaz" className="diseños-h1">

@@ -21,7 +21,7 @@ const LoginForm = () => {
     e.preventDefault();
   
 
-    // Aquí realizarías la petición fetch al backend para iniciar sesión
+    // Aca realizarías la petición fetch al backend para iniciar sesión
     try {
       const response = await fetch("/api/login", {
         method: "POST",
