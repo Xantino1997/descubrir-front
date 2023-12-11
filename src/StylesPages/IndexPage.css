@@ -140,7 +140,7 @@
   padding-right: 10px;
   width: 30%;
   height: 99.5%;
-  background-image: url("../assets/DIGITAL.WebP");
+  background-image: url("../assets/DIGITAL.avif");
   background-size: cover;
   background-position: center;
   z-index: 2;
@@ -248,7 +248,7 @@
     margin: 0 auto;
     width: 70%;
     height: 70px;
-    background-image: url("../assets/DIGITAL.WebP");
+    background-image: url("../assets/DIGITAL.avif");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

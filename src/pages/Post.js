@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../StylesPages/Post.css";
 import profileAvatar from "../assets/profile.png";
-import imgDigital from "../assets/DIGITAL.WebP";
+import imgDigital from "../assets/DIGITAL.avif";
 import leads from "../assets/leads.png";
 import prospecto from "../assets/prospecto.png";
 import diferencias from "../assets/diferencias.png";
