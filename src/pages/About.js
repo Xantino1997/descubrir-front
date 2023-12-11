@@ -1,6 +1,6 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal"; // Importa Fade desde react-awesome-reveal
-import Digital from "../assets/DIGITAL.png";
+import Digital from "../assets/DIGITAL.WebP";
 import TeamDigital from "../assets/Team-digital.png";
 import "../StylesPages/About.css";
 import { Link } from "react-router-dom";
