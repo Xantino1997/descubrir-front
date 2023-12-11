@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url('../assets/header.WebP'); /* Ruta a tu archivo GIF */
+  background-image: url('../assets/header.png'); /* Ruta a tu archivo GIF */
   background-repeat: no-repeat; /* Evita que el fondo se repita */
   background-size: cover; /* Cubre el fondo del elemento */
   background-position: center center; /* Centra el fondo horizontal y verticalmente */

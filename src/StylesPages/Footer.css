@@ -7,7 +7,7 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  background-image: url("../assets/footer.WebP"); /* Ruta a tu archivo SVG */
+  background-image: url("../assets/footer.png"); /* Ruta a tu archivo SVG */
 }
 
 .columna {
