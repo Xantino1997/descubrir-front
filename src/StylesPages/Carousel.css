@@ -1,0 +1,94 @@
+.container-carousel {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  background: red;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.diseños-rutas-carousel-video {
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 0 0 20px black;
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-size: cover; /* Cubre el fondo del elemento */
+  background-position: center center; /* Centra el fondo horizontal y verticalmente */
+  padding-bottom: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background: black;
+  margin-left: 0px;
+  display: flex; /* Corrige el error de escritura */
+}
+.row-left {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100px;
+  height: 100px;
+  font-size: 70px;
+  color: #fff;
+}
+
+.row-right {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100px;
+  height: 100px;
+  font-size: 70px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container-carousel {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background: red;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row-left {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 50px;
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .row-right {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 50px;
+    font-size: 40px;
+    color: #fff;
+  }
+}
